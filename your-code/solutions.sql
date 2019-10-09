@@ -1,5 +1,8 @@
 
 ## Challenge 1 - Who Have Published What At Where?
+'''
+L.S. Good!
+'''
 
 SELECT authors.au_id, authors.au_lname, authors.au_fname, titleauthor.title_id, titles.title, publishers.pub_name
 FROM authors
@@ -28,7 +31,9 @@ group BY authors.au_id, authors.au_lname, authors.au_fname, titleauthor.title_id
 Order by Total DESC
 Limit 3;
 
-
+'''
+L.S. Correct!
+'''
 ## Challenge 4 - Best Selling Authors Ranking
 
 SELECT authors.au_id, authors.au_lname, authors.au_fname, titleauthor.title_id, titles.title, sum(sales.qty) AS Total
